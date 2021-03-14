@@ -1,0 +1,47 @@
+<div class="container-100 row main">
+  <div class="container-70 row inner">
+    <div class="container-100 row heading">
+      <h1>Loan Calculator</h1>
+      <p>A loan is a contract in which the borrower recieves an amount of money that they are obligated to payback in
+        the future.</p>
+    </div>
+    <div class="col-50 calculations">
+      <div class="calc-inner">
+        <h4>Please fill below</h4>
+        <mat-form-field appearance="outline">
+          <mat-label for="amount">Loan Amount</mat-label>
+          <input matInput type="number" id="amount" [(ngModel)]="loanamnt" (change)="calculate()" (keyup)="calculate()"
+            pattern="^[1-9]\d*(\.\d+)?$" required>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label for="term">Loan Term(Months)</mat-label>
+          <input matInput type="number" id="term" [(ngModel)]="loanterm" (change)="calculate()" (keyup)="calculate()"
+            pattern="^[1-9]\d*(\.\d+)?$" required>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label for="interest">Interest rate per month</mat-label>
+          <input matInput type="number" [(ngModel)]="interest" (change)="calculate()" (keyup)="calculate()"
+            pattern="^[1-9]\d*(\.\d+)?$" required>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="col-50 result-section">
+      <div class="m-auto">
+        <div class="top">
+          <p>Your Monthly Payment</p>
+          <span class="emi"><i>$</i>{{monthlyPayment}}</span>
+        </div>
+        <div class="bottom">
+          <div>
+            <p>Total Principal Paid : </p> <span>${{totalPayment}}</span>
+          </div>
+          <div class="clearfix"></div>
+          <div>
+            <p>Total Interest Paid : </p> <span>${{totalInterest}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

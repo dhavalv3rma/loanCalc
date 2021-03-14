@@ -1,0 +1,139 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner {
+  border-radius: 8px;
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  text-align: center;
+  background: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #bbb;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+
+  .heading {
+    h1 {
+      padding-bottom: 10px;
+      margin: auto;
+      color: rgb(17, 17, 17);
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 75px;
+      font-weight: bold;
+      letter-spacing: -1px;
+      line-height: 1;
+      text-align: center;
+      user-select: none;
+      width: 50%;
+      border-bottom: 1px solid #bbb;
+    }
+    p {
+      margin: 16px auto;
+      width: 50%;
+    }
+  }
+
+  .col-50 {
+    width: 49.5%;
+
+    .calc-inner {
+      border-right: 1px solid #bbb;
+    }
+  }
+
+  .calculations {
+    .mat-form-field {
+      display: block;
+      width: 300px;
+      margin: auto;
+    }
+  }
+
+  .result-section {
+    user-select: none;
+
+    .top {
+      margin-top: 22px;
+      margin-bottom: 52px;
+
+      p {
+        margin-bottom: 32px;
+      }
+      .emi {
+        font-weight: 900;
+        font-size: 52px;
+        position: relative;
+        border-bottom: solid 4px red;
+        border-radius: 3px;
+
+        i {
+          position: absolute;
+          font-size: 33px;
+          top: 10px;
+          left: -24px;
+        }
+      }
+    }
+
+    .bottom {
+      padding: 10px;
+      // width: 300px;
+      margin: auto;
+
+      span {
+        font-weight: bold;
+      }
+      p,
+      span {
+        display: inline;
+      }
+
+      .clearfix {
+        margin: 12px auto;
+        width: 30%;
+        border-top: 1px solid #bbb;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .inner{
+    bottom: 0% !important;
+    height: 100vh;
+  }
+  .heading {
+    h1 {
+      font-size: 40px !important;
+      padding-bottom: 10px;
+      width: 90% !important;
+      // margin: 50px auto !important;
+    }
+    p {
+      width: 90% !important;
+    }
+  }
+  .col-50 {
+    width: 100% !important;
+
+    .calc-inner {
+      border: 0px !important;
+
+    }
+
+    .mat-form-field {
+      width: 80% !important;
+    }
+
+    .emi {
+      font-weight: 700;
+      font-size: 33px !important;
+    }
+  }
+}

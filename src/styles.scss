@@ -1,1 +1,88 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+////////////////////// Global Rules ///////////////////
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: inherit;
+
+  &::after,
+  &::before {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  background-color: #faf3ef;
+  font-family: Oswald;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover,
+  &:visited,
+  &:active {
+    color: #ffffff;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+// CONTAINERS & Rows
+
+.container-100 {
+  width: 100%;
+  margin: auto;
+}
+
+.container-90 {
+  width: 90%;
+  margin: auto;
+}
+
+.container-80 {
+  width: 80%;
+  margin: auto;
+}
+
+.container-70 {
+  width: 70%;
+  margin: auto;
+}
+
+.container-50 {
+  width: 50%;
+  margin: auto;
+}
+
+.row {
+  display: block;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.m-auto {
+  margin: auto;
+}
+.m-10 {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
