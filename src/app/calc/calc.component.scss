@@ -103,17 +103,18 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 860px) {
   .inner{
+    top: 0% !important;
     bottom: 0% !important;
-    height: 100vh;
+    padding-top: 72px;
+    height: 100vh !important;
   }
   .heading {
     h1 {
       font-size: 40px !important;
       padding-bottom: 10px;
       width: 90% !important;
-      // margin: 50px auto !important;
     }
     p {
       width: 90% !important;
