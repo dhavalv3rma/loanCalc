@@ -1,5 +1,9 @@
 # LoanCalc
 
+Loan Calculator is a web-based calculator application, where a user can fill in his details like Principal (Loan Amount), Rate of interest, and the Time period in months. Its calculates EMI, total interest payable and total Amount to be paid by the user.
+
+Base technologies used were Angular, Sass and Bootstrap(4).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
 
 ## Development server
